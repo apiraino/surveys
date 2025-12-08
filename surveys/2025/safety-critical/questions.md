@@ -16,26 +16,26 @@ Type: free form
 
 ### Which of the following Rust language features, if available, would improve the ability for you to use the Rust programming language in safety-critical software development?
 
-Explanation of the various options:
+Please answer how important those features are to you. If you would consider contributing funds or implementation work to push them forward, select *Would contribute (financially or with engineering)*. If not, but improving that feature would unblock development of your project(s), select *Would unblock development*, etc.
 
 Type: matrix
 
 Rows:
 
-- Branch Coverage stabilized
-- Modified Condition / Decision Coverage (MC/DC)
-- Debug Info (DWARF) support improved
-- Stack Protector
-- Trust Zone
-- Control Flow Integrity
-- Deterministic Code Generation
-- Coverage Instrumentation for Macros
-- Contracts (pre/post condition)
-- QNX Migrated to Higher Tier
-- VxWorks Migrated to Higher Tier
+- [Branch Coverage stabilized](https://github.com/rust-lang/rust/issues/124118)
+- [Modified Condition / Decision Coverage (MC/DC)](https://github.com/rust-lang/rust/issues/124144)
+- [Debug Info (DWARF) support improved](https://rustc-dev-guide.rust-lang.org/debugging-support-in-rustc.html)
+- [Stack Protector](https://github.com/rust-lang/rust/issues/114903)
+- [TrustZone](https://developer.arm.com/documentation/100690/latest/)
+- [Control Flow Integrity](https://github.com/rust-lang/rust/issues/89653)
+- [Coverage Instrumentation for Macros](https://github.com/rust-lang/rust/issues/123567)
+- [Contracts (pre/post condition)](https://doc.rust-lang.org/core/contracts/index.html)
+- [QNX Migrated to Higher Tier](https://doc.rust-lang.org/rustc/platform-support/nto-qnx.html)
+- [VxWorks Migrated to Higher Tier](https://doc.rust-lang.org/rustc/platform-support/vxworks.html)
 
 Columns:
 
+- Would contribute (financially or with engineering)
 - Would unblock development
 - Would be good to have
 - Not needed for my case
@@ -46,6 +46,8 @@ Columns:
 Type: free form
 
 ### Which of the following Rust ecosystem tools/features, if available, would improve the ability for you to use the Rust programming language in safety-critical software development?
+
+Please answer how important those features are to you. If you would consider contributing funds or implementation work to push them forward, select *Would contribute (financially or with engineering)*. If not, but improving that feature would unblock development of your project(s), select *Would unblock development*, etc.
 
 Type: matrix
 
@@ -61,6 +63,7 @@ Rows:
 
 Columns:
 
+- Would contribute (financially or with engineering)
 - Would unblock development
 - Would be good to have
 - Not needed for my case
@@ -74,7 +77,7 @@ Type: free form
 
 Type: free form
 
-#### Contact information
+## Contact information
 
 If your group or organization considers contributing engineering time or financial funds to seeing a feature be completed, please make sure include your contact information below so we can discuss further.
 
