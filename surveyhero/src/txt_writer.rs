@@ -12,13 +12,12 @@ use std::{io::Read, path::Path};
 pub fn md_to_txt(source: &Path, dist: &Path) -> Result<()> {
     let mut file = std::fs::File::open(source)?;
     let mut contents = String::new();
-    assert!(dist.is_dir());
+    assert!(dist.is_file());
     assert!(source.is_file());
     file.read_to_string(&mut contents)?;
 
     let questions = crate::markdown::parse(&contents)?;
-    let dist_file = dist.join(source.with_extension(".txt").file_name().unwrap());
-    let mut dist_file = std::fs::File::create(dist_file)?;
+    let mut dist_file = std::fs::File::create(dist)?;
     write_questions(&questions, &mut dist_file)?;
 
     Ok(())
