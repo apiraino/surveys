@@ -10,7 +10,6 @@ pub struct Cli {
     pub source: PathBuf,
 
     /// Path to the output txt file
-    #[clap(short, long)]
     pub dist: PathBuf,
 }
 
