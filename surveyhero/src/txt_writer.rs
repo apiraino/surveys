@@ -10,10 +10,9 @@ use std::io::Write;
 use std::{io::Read, path::Path};
 
 pub fn md_to_txt(source: &Path, dist: &Path) -> Result<()> {
+    assert!(source.is_file(), "Source must be a file");
     let mut file = std::fs::File::open(source)?;
     let mut contents = String::new();
-    assert!(dist.is_file());
-    assert!(source.is_file());
     file.read_to_string(&mut contents)?;
 
     let questions = crate::markdown::parse(&contents)?;
